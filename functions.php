@@ -136,6 +136,11 @@ add_action( 'wp_enqueue_scripts', 'chalemar_scripts' );
 
 
 /**
+ * Add gallery to custom post type
+ */
+
+require get_template_directory() . '/inc/gallery.php';
+/**
  * Add own slide
  */
 
