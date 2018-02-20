@@ -18,25 +18,38 @@ get_header(); ?>
                     modi incidunt debitis molestiae quia autem velit voluptate culpa nostrum.</p>
                 </div>
                 <div class="col col-6 offset-1">
-                    <img class="img-whiteborder" src="<?php echo get_template_directory_uri() . '/dist/images/soworthloving-wallpaper-768x480.jpg' ?>">    
+                    <img class="img-whiteborder" src="<?php echo get_template_directory_uri() . '/dist/images/canola2.jpg' ?>">    
                 </div>
             
             </div>
         </div>
     </section>
 
-    <section class="localizacao sec-space bg-midgray">
+    <section class="testimonials blue-bg sec-space">
         <div class="container">
             <div class="row gutters">
                 <div class="col col-6">
-                    <iframe class="img-whiteborder" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.205485941762!2d-35.005668443619456!3d-6.367447872525705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b29d6ceef67861%3A0xb14ad83c2bb74f2!2sChalemar+Hotel+Pousada!5e0!3m2!1spt-BR!2sbr!4v1518919649029" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <?php do_action( 'wprev_tripadvisor_plugin_action', 1 ); ?>
                 </div>
                 <div class="col col-5 offset-1">
-                    <h1 class="localizacao__title block-title bt-light aluminum">Nossa Localização</h1>
-                    <p class="localizacao__text block-text aluminum">
+                    <h1 class="testimonials__title block-title bt-light aluminum">Depoimento dos Hóspedes</h1>
+                    <p class="testimonials__text block-text aluminum">
                         The palatable sensation we lovingly refer to as The Cheeseburger has a distinguished and illustrious history. It was born from humble roots, only to rise to well-seasoned greatness.
                     </p>
                 </div>            
+            </div>
+        </div>
+    </section>
+    <section class="book-now sec-space">
+        <div class="container">
+            <div class="row gutters">
+                <div class="col col-12">
+                    <h1 class="text-center darkgray book-now__title">Faça sua reserva agora</h1>
+                    <div class="bookingcom-logo">
+                        <img src="<?php echo get_template_directory_uri() . '/dist/images/bookingcom-logo-white.jpg'?>" alt="">
+                    </div>
+                    <a href="https://www.booking.com/hotel/br/chalemar-baia-formosa.pt-br.html" class="button text-center w50 book-now__btn large" target="_blank">Reservar</a>
+                </div>
             </div>
         </div>
     </section>
