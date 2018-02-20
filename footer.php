@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="tm testimonials">
+		<!-- <div class="tm testimonials-widget">
 			<div class="container">
 				<ul class="tm-list">
 					<li>
@@ -26,8 +26,8 @@
 					</li>
 				</ul>
 			</div>
-		</div>
-		<div class="footer-info sec-space">
+		</div> -->
+		<div class="footer-info sec-space-sm bg-darkgray">
 			<div class="container">
 				<div class="row">
 					<div class="col col-2" style="border-right: none;">
@@ -46,10 +46,8 @@
 					<div class="col col-4">
 						<h6 class="text-center lightgray">Siga-nos</h6>
 						<ul class="social-networks row">
-							<li><i class="fa fa-facebook"></i></li>
-							<li><i class="fa fa-instagram"></i></li>
-							<li><i class="fa fa-twitter"></i></li>
-							<li><i class="fa fa-google-plus"></i></li>
+							<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.instagram.com/chalemarbf/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 						</ul>
 					</div>
 					<div class="col col-4">

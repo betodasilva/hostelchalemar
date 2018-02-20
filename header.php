@@ -46,10 +46,8 @@
 				endif; ?>
 			</div><!-- .site-branding -->
 			<ul class="social-networks row">
-				<li><i class="fa fa-facebook"></i></li>
-				<li><i class="fa fa-instagram"></i></li>
-				<li><i class="fa fa-twitter"></i></li>
-				<li><i class="fa fa-google-plus"></i></li>
+				<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/chalemarbf/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 			</ul>
 
 			<nav id="site-navigation" class="main-nav row">
@@ -66,5 +64,5 @@
 		</div>
 		
 	</header><!-- #masthead -->
-
+	
 	<div id="content" class="site-content">
