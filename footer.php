@@ -29,28 +29,25 @@
 		</div> -->
 		<div class="footer-info sec-space-sm bg-darkgray">
 			<div class="container">
+			
 				<div class="row">
-					<div class="col col-2" style="border-right: none;">
-						 <img src="<?php echo get_template_directory_uri() . '/dist/images/img_0767-150x150.jpg' ?>" alt="">
-					</div>
 					<div class="col col-2">
-						<?php
-							wp_nav_menu( array(
-								'theme_location' 	=> 'menu-1',
-								'container_class'	=> 'nav-list-container',
-								'menu_id'        	=> 'primary-menu',
-								'menu_class'	 	=> 'nav-footer'
-							) );
-						?>
+						<div class="footer-logo">
+							<?php the_custom_logo(); ?>
+						</div>
 					</div>
-					<div class="col col-4">
-						<h6 class="text-center lightgray">Siga-nos</h6>
-						<ul class="social-networks row">
-							<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="https://www.instagram.com/chalemarbf/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-						</ul>
+					
+					<div class="col col-3 offset-1">
+						<h4 class="txt-white nav-footer-title">Links</h4>
+						<?php wp_nav_menu( array(
+							'theme_location' 	=> 'menu-1',
+							'container_class'	=> 'nav-list-container',
+							'menu_id'        	=> 'primary-menu',
+							'menu_class'	 	=> 'nav-footer'
+						) ); ?>
 					</div>
-					<div class="col col-4">
+					<div class="col col-3">
+						<h4 class="txt-white">Endereço</h4>
 						<div class="address">
 							<p>Lot. Merepe II, Quadra G1, Lote 1A, 
 								Porto de Galinhas, PE, Brasil
@@ -62,6 +59,14 @@
 						</div>
 						
 					</div>
+					<div class="col col-3">
+						<h4 class="txt-white">Siga-nos</h4>
+						<ul class="social-networks">
+							<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.instagram.com/chalemarbf/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+					
 				</div>
 			</div>
 		</div><!-- .site-info -->

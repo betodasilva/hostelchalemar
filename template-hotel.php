@@ -20,7 +20,7 @@ get_header(); ?>
 
 			<section class="about sec-space">
 				<div class="container">
-					<div class="row gutters">
+					<div class="row">
 						<div class="col col-5">
 							<?php while( have_posts() ) 
 										the_post(); ?>
@@ -37,7 +37,7 @@ get_header(); ?>
 
 			<section class="about blue-bg sec-space">
 				<div class="container">
-					<div class="row gutters">
+					<div class="row">
 						<div class="col col-6">
 
 							<?php 
@@ -63,7 +63,7 @@ get_header(); ?>
 
 			<section class="localizacao sec-space">
 				<div class="container">
-					<div class="row gutters">
+					<div class="row">
 						<div class="col col-5">
 							<h1 class="localizacao__title block-title bt-dark darkgray">Nossa Localização</h1>
 							<p class="localizacao__text block-text midgray">

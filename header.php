@@ -51,7 +51,7 @@
 			</ul>
 
 			<nav id="site-navigation" class="main-nav row">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'chalemar' ); ?></button>
+				<button class="menu-toggle w50" aria-controls="primary-menu" aria-expanded="false">MENU<i class="kube-menu"></i></button>
 				<?php
 					wp_nav_menu( array(
 						'theme_location' 	=> 'menu-1',

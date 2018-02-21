@@ -10,7 +10,7 @@ get_header(); ?>
     
     <section class="about sec-space">
         <div class="container">
-            <div class="row gutters">
+            <div class="row">
                 <div class="col col-5">
                     <h1 class="about__title block-title bt-dark darkgray">Sobre</h1>
                     <p class="about__text block-text midgray">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero unde quasi
@@ -27,7 +27,7 @@ get_header(); ?>
 
     <section class="testimonials blue-bg sec-space">
         <div class="container">
-            <div class="row gutters">
+            <div class="row">
                 <div class="col col-6">
                     <?php do_action( 'wprev_tripadvisor_plugin_action', 1 ); ?>
                 </div>
@@ -42,7 +42,7 @@ get_header(); ?>
     </section>
     <section class="book-now sec-space">
         <div class="container">
-            <div class="row gutters">
+            <div class="row">
                 <div class="col col-12">
                     <h1 class="text-center darkgray book-now__title">Faça sua reserva agora</h1>
                     <div class="bookingcom-logo">
