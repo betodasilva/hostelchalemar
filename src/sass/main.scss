@@ -127,16 +127,16 @@ img {
     left: 50%;
     transform: translateX(-50%);
     margin: 0 auto;
-    padding: 18px 26px;
+    padding: 28px 32px;
     background-color: $bluedark;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
 .nav-list>li {
-    padding: 0 20px;
+    padding: 0 26px;
     line-height: 1;
-    &:not(:last-child) { border-right: 1px solid #f6f6f6; }
+    &:not(:last-child) { border-right: 2px solid #fff; }
     a {
         color: #fff;
         text-decoration: none;
