@@ -27,8 +27,9 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'chalemar' ); ?></a>
 	
 	<header id="masthead" class="site-header">
-		<div class="hero">
+		<div class="hero max-width">
 			<?php echo do_shortcode('[simpleslider location="" animation="" slideshowspeed=""]');  ?>
+
 			<div class="site-branding">
 				<?php
 				the_custom_logo();

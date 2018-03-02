@@ -27,7 +27,7 @@
 				</ul>
 			</div>
 		</div> -->
-		<div class="footer-info sec-space-sm bg-darkgray">
+		<div class="footer-info sec-space-sm bg-darkgray max-width">
 			<div class="container">
 			
 				<div class="row">
