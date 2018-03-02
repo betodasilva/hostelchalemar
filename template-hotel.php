@@ -16,19 +16,22 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main max-width">
 
 			<section class="about sec-space">
 				<div class="container">
 					<div class="row">
 						<div class="col col-5">
-							<?php while( have_posts() ) 
-										the_post(); ?>
-							<h1 class="about__title block-title bt-dark darkgray"><?php the_title(); ?></h1>
-							<p class="about__text block-text midgray"><?php the_content(); ?></p>
+							<?php 
+								$hotel_title = get_theme_mod('thehotel_hotel-title');
+								$hotel_text = get_theme_mod('thehotel_hotel-text');
+								$hotel_image = get_theme_mod('thehotel_hotel-img');
+							?>
+							<h1 class="about__title block-title bt-dark darkgray"><?php echo esc_html( $hotel_title ); ?></h1>
+							<p class="about__text block-text midgray"><?php echo esc_html( $hotel_text ); ?></p>
 						</div>
 						<div class="col col-6 offset-1">
-							<?php the_post_thumbnail('large', array('class' => 'img-whiteborder')); ?>
+							<img src="<?php echo esc_url( $hotel_image ); ?>" alt="<?php echo esc_html( $hotel_title ); ?>" class="img-whiteborder">
 						</div>
 					
 					</div>
@@ -41,20 +44,19 @@ get_header(); ?>
 						<div class="col col-6">
 
 							<?php 
-							$title = get_field('titulo_lazer');
-							$content = get_field('texto_lazer');
-							$image = get_field('imagem_lazer');
+							$recreation_title = get_theme_mod( 'thehotel_recreation-title' );
+							$recreation_text = get_theme_mod( 'thehotel_recreation-text' );
+							$recreation_image = get_theme_mod( 'thehotel_recreation-img' );
 							?>
 							<?php 
-								if ( $image ): ?>
-									<img src="<?php echo $image['url']?>" alt="" class="img-whiteborder">
+								if ( $recreation_image ): ?>
+									<img src="<?php echo esc_url( $recreation_image ); ?>" alt="<?php echo esc_html( $recreation_title )?>" class="img-whiteborder">
 								<?php endif;
 							?>
 						</div>
 						<div class="col col-5 offset-1">
-							
-							<h1 class="about__title block-title bt-light aluminum"><?php echo $title; ?></h1>
-							<p class="about__text block-text aluminum"><?php echo $content; ?></p>
+							<h1 class="about__title block-title bt-light aluminum"><?php echo esc_html( $recreation_title ); ?></h1>
+							<p class="about__text block-text aluminum"><?php echo esc_html( $recreation_text ); ?></p>
 						</div>
 					
 					</div>
@@ -65,9 +67,13 @@ get_header(); ?>
 				<div class="container">
 					<div class="row">
 						<div class="col col-5">
-							<h1 class="localizacao__title block-title bt-dark darkgray">Nossa Localização</h1>
+							<?php 
+								$ourlocation_title = get_theme_mod( 'thehotel_ourlocation-title' );
+								$ourlocation_text = get_theme_mod( 'thehotel_ourlocation-text' );
+							?>
+							<h1 class="localizacao__title block-title bt-dark darkgray"><?php echo esc_html( $ourlocation_title ); ?></h1>
 							<p class="localizacao__text block-text midgray">
-								The palatable sensation we lovingly refer to as The Cheeseburger has a distinguished and illustrious history. It was born from humble roots, only to rise to well-seasoned greatness.
+								<?php echo esc_html( $ourlocation_text ); ?>
 							</p>
 						</div>
 						<div class="col col-6 offset-1">
