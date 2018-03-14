@@ -49,12 +49,13 @@
 					<div class="col col-3">
 						<h4 class="txt-white">Endereço</h4>
 						<div class="address">
-							<p>Lot. Merepe II, Quadra G1, Lote 1A, 
-								Porto de Galinhas, PE, Brasil
+							<p>Chalemar Hotel Pousada <br>
+								Via Costeira - s/n, Baía Formosa - RN, 59194-000
 							</p>
 							<p>
-							Reservas (81) 2126.2160 / (81) 99146.2083
-							Recepção (81) 3311.6000
+							Contato: (84) 9 9112 7537
+							<br>
+							(84) 3244-2222 / (84) 3244-2220
 							</p>
 						</div>
 						
