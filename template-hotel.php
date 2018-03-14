@@ -21,13 +21,15 @@ get_header(); ?>
 			<section class="about sec-space">
 				<div class="container">
 					<div class="row">
-						<div class="col col-5">
-							<?php 
-								$hotel_title = get_theme_mod('thehotel_hotel-title');
-								$hotel_text = get_theme_mod('thehotel_hotel-text');
-								$hotel_image = get_theme_mod('thehotel_hotel-img');
-							?>
+						<?php 
+							$hotel_title = get_theme_mod('thehotel_hotel-title');
+							$hotel_text = get_theme_mod('thehotel_hotel-text');
+							$hotel_image = get_theme_mod('thehotel_hotel-img');
+						?>
+						<div class="col col-12">
 							<h1 class="about__title block-title bt-dark darkgray"><?php echo esc_html( $hotel_title ); ?></h1>
+						</div>
+						<div class="col col-5">
 							<p class="about__text block-text midgray"><?php echo esc_html( $hotel_text ); ?></p>
 						</div>
 						<div class="col col-6 offset-1">
@@ -41,13 +43,18 @@ get_header(); ?>
 			<section class="about blue-bg sec-space">
 				<div class="container">
 					<div class="row">
-						<div class="col col-6">
-
-							<?php 
+						<?php 
 							$recreation_title = get_theme_mod( 'thehotel_recreation-title' );
 							$recreation_text = get_theme_mod( 'thehotel_recreation-text' );
 							$recreation_image = get_theme_mod( 'thehotel_recreation-img' );
-							?>
+						?>
+						<div class="col col-12">
+							<div class="col col-4 offset-7">
+								<h1 class="about__title block-title bt-light aluminum"><?php echo esc_html( $recreation_title ); ?></h1>
+							</div>	
+							
+						</div>
+						<div class="col col-6 order-mobile">
 							<?php 
 								if ( $recreation_image ): ?>
 									<img src="<?php echo esc_url( $recreation_image ); ?>" alt="<?php echo esc_html( $recreation_title )?>" class="img-whiteborder">
@@ -55,7 +62,6 @@ get_header(); ?>
 							?>
 						</div>
 						<div class="col col-5 offset-1">
-							<h1 class="about__title block-title bt-light aluminum"><?php echo esc_html( $recreation_title ); ?></h1>
 							<p class="about__text block-text aluminum"><?php echo esc_html( $recreation_text ); ?></p>
 						</div>
 					
@@ -66,12 +72,14 @@ get_header(); ?>
 			<section class="localizacao sec-space">
 				<div class="container">
 					<div class="row">
-						<div class="col col-5">
-							<?php 
-								$ourlocation_title = get_theme_mod( 'thehotel_ourlocation-title' );
-								$ourlocation_text = get_theme_mod( 'thehotel_ourlocation-text' );
-							?>
+						<?php 
+							$ourlocation_title = get_theme_mod( 'thehotel_ourlocation-title' );
+							$ourlocation_text = get_theme_mod( 'thehotel_ourlocation-text' );
+						?>
+						<div class="col col-12">
 							<h1 class="localizacao__title block-title bt-dark darkgray"><?php echo esc_html( $ourlocation_title ); ?></h1>
+						</div>
+						<div class="col col-5">
 							<p class="localizacao__text block-text midgray">
 								<?php echo esc_html( $ourlocation_text ); ?>
 							</p>

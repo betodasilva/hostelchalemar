@@ -11,14 +11,15 @@ get_header(); ?>
     <section class="about sec-space max-width">
         <div class="container">
             <div class="row">
-                <div class="col col-5">
                 <?php 
                     $about_title = get_theme_mod( 'frontpage_about-title' );
                     $about_text = get_theme_mod( 'frontpage_about-text' );
                     $about_image = get_theme_mod( 'frontpage_about-img' );
-                
                 ?>
+                <div class="col col-12">
                     <h1 class="about__title block-title bt-dark darkgray"><?php echo esc_html( $about_title ); ?></h1>
+                </div>
+                <div class="col col-5">
                     <p class="about__text block-text midgray"><?php echo esc_html( $about_text ); ?></p>
                 </div>
                 <div class="col col-6 offset-1">

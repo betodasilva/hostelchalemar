@@ -59,7 +59,7 @@ img {
 }
 
 .max-width {
-    max-width: 1620px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -540,6 +540,7 @@ img {
 
 
 .block-title {
+    margin-bottom: 40px;
     &:after {
         content: "";
         display: block;
@@ -553,6 +554,9 @@ img {
 
     &.bt-light:after {
         background-color: #f8f8f8;
+    }
+    @media (max-width: 480px) {
+        margin-bottom: 20px;
     }
 }
 .block-text, .archive-description p {
@@ -591,4 +595,18 @@ img {
 
 .menu-toggle {
     margin: 0 auto;
+}
+
+.row.parentes {
+    @media (min-width: 768px) {
+        >.col-4 {
+            margin-left: 2%;
+        }
+    }
+}
+
+.order-mobile {
+    @media (max-width: 768px) {
+        order: 2;
+    }
 }
