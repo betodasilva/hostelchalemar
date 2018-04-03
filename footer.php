@@ -50,7 +50,7 @@
 						<h4 class="txt-white">Endereço</h4>
 						<div class="address">
 							<p>Chalemar Hotel Pousada <br>
-								Via Costeira - s/n, Baía Formosa - RN, 59194-000
+								Av. Costeira - nº 40, Baía Formosa - RN, 59194-000
 							</p>
 							<p>
 							Contato: (84) 9 9112 7537
