@@ -217,6 +217,13 @@ img {
 
 /* ABOUT */
 
+.sec-space-bt {
+    padding-bottom: 60px;
+    @media (min-width: 1024px) {
+        padding-bottom: 120px;
+    }
+}
+
 .sec-space {
     padding-top: 60px;
     padding-bottom: 60px;

@@ -34,7 +34,16 @@ get_header(); ?>
         <div class="container">
             <div class="row">
                 <div class="col col-6">
-                    <?php do_action( 'wprev_tripadvisor_plugin_action', 1 ); ?>
+                    <div class="testimonials-slide">
+                        <?php 
+                            $the_query = new WP_Query( array( 'post_type' => 'depoimentos' ) );
+                            if ( $the_query->have_posts() ) :
+                                while ( $the_query->have_posts() ) : $the_query->the_post(); 
+                                    get_template_part( 'template-parts/content', 'depoimentos' );
+
+                            endwhile;
+                        endif;?>
+                    </div>
                 </div>
                 <div class="col col-5 offset-1">
                     <?php 
@@ -57,6 +66,27 @@ get_header(); ?>
                         <img src="<?php echo get_template_directory_uri() . '/dist/images/bookingcom-logo-white.jpg'?>" alt="">
                     </div>
                     <a href="https://www.booking.com/hotel/br/chalemar-baia-formosa.pt-br.html" class="button text-center w50 book-now__btn large" target="_blank">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-space-bt max-width">
+        <div class="container">
+            <div class="row gutters align-middle">
+                <div class="col col-12">
+                    <h2 class="text-center">Parceiros:</h2>
+                </div>
+                <div class="col col-3">
+                    <img src="<?php echo get_template_directory_uri() . '/dist/images/parceiro01.png'?>" alt="parceiro 01">
+                </div>
+                <div class="col col-3">
+                    <img src="<?php echo get_template_directory_uri() . '/dist/images/parceiro02.png'?>" alt="parceiro 02">
+                </div>
+                <div class="col col-3">
+                    <img src="<?php echo get_template_directory_uri() . '/dist/images/parceiro03.png'?>" alt="parceiro 03">
+                </div>
+                <div class="col col-3">
+                    <img src="<?php echo get_template_directory_uri() . '/dist/images/parceiro04.png'?>" alt="parceiro 04">
                 </div>
             </div>
         </div>

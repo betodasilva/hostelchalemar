@@ -1,16 +1,9 @@
 <?php
-
-/* SLIDER */
-function register_my_scripts() {
-	wp_register_script( 'slick-slider', get_template_directory_uri() . '/dist/js/slick.js', array('jquery'), '1.0.1', true );
-}
-add_action('init', 'register_my_scripts');
  
 function print_my_script() {
 	global $add_my_script, $ss_atts;
 	if ( $add_my_script ) {
 		$speed = $ss_atts['slideshowspeed']*1000;
-		wp_print_scripts('slick-slider');
 		echo "<script type=\"text/javascript\">
 jQuery(document).ready(function($) {
 	$('head').prepend($('<link>').attr({
