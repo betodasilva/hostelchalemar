@@ -253,6 +253,78 @@ img {
 .blue-bg {
     background-color: $bluedark;
 }
+
+
+.testimonials-slide {
+    margin-top: 1em;
+}
+
+.testimonials-slide .slick-dots li button:before {
+    color: #fff;
+}
+
+.testimonial {
+    position: relative;
+    &:after {
+        bottom: -25px;
+        box-sizing: border-box;
+        color: #fff;
+        content: '';
+        display: block;
+        height: 30px;
+        left: 80px;
+        position: absolute;
+        right: 445px;
+        width: 30px;
+        column-rule-color: rgb(255, 255, 255);
+        perspective-origin: 15px 15px;
+        transform-origin: 15px 15px;
+        filter: drop-shadow(rgba(0, 0, 0, 0.0980392) 2px 2px 1px);
+        border-top: 30px solid rgb(255, 255, 255);
+        border-right: 30px solid rgba(0, 0, 0, 0);
+        border-bottom: 0px solid rgba(0, 0, 0, 0);
+        border-left: 0px solid rgba(0, 0, 0, 0);
+        outline: rgb(255, 255, 255) none 0px;
+    }
+}
+
+.testimonial-text {
+    padding: 20px 20px 20px 60px;
+    background-color: #fff;
+    position: relative;
+    &:before {
+        content: '\201C';
+        position: absolute;
+        bottom: 47px;
+        right: 515.391px;
+        left: 55px;
+        color: $green;
+        display: block;
+        height: 96px;
+        top: 20px;
+        width: 24.6094px;
+        column-rule-color: $green;
+        perspective-origin: 12.2969px 48px;
+        transform-origin: 12.2969px 48px;
+        border: 0px none $green;
+        font: normal normal normal normal 60px / 96px Georgia, serif;
+        margin: -25px 0px 0px -40px;
+        outline: $green none 0px;
+    }
+
+    > p {
+        font-size: 14px;
+        color: $bluedark;
+        line-height: 20px;
+    }
+
+     i {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        color: $green;
+    }
+}
 /* TESTIMONIALS WIDGET */
 
 .wptripadvisor_t1_A_8 > img {

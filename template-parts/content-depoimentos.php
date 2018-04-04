@@ -13,6 +13,7 @@
 	<div class="testimonial">
 		<div class="testimonial-text">
 			<?php the_content(); ?>
+			<i class="fab fa-tripadvisor fa-2x"></i>
 		</div>
 	</div>  
 </article><!-- #post-<?php the_ID(); ?> -->

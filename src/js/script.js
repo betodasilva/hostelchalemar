@@ -7,7 +7,9 @@
     $slide.slick({
         autoplay: true,
         autoplaySpeed: 6000,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        dots: true,
+        arrows: false
     });
 })();
 

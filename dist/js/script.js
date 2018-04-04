@@ -1,1 +1,1 @@
-!function(){var e=document.querySelector(".testimonials-slide");e&&($slide=$(e),$slide.slick({autoplay:!0,autoplaySpeed:6e3,adaptiveHeight:!0}))}();
+!function(){var e=document.querySelector(".testimonials-slide");e&&($slide=$(e),$slide.slick({autoplay:!0,autoplaySpeed:6e3,adaptiveHeight:!0,dots:!0,arrows:!1}))}();
